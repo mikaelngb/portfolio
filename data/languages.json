@@ -1,0 +1,16 @@
+{
+  "languages": [
+    {
+      "name": "English",
+      "proficiency": "Intermediate"
+    },
+    {
+      "name": "Indonesian",
+      "proficiency": "Proficient"
+    },
+    {
+      "name": "Mandarin",
+      "proficiency": "Basic"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+    "projects": [
+        {
+            "id": "youtube-clone",
+            "title": "YouTube Clone using Next.js",
+            "briefDescription": "A YouTube clone application built with Next.js, replicating core YouTube functionality.",
+            "detailedDescription": "This project demonstrates frontend development skills using Next.js, implementing features similar to YouTube including video display, search functionality, and responsive design. Built with modern web technologies and best practices.",
+            "technologies": ["Next.js", "React", "JavaScript", "CSS"],
+            "liveUrl": "https://ytv2-clone.netlify.app",
+            "githubUrl": "https://github.com/mikaelngb/youtube-clone-v2",
+            "imageUrl": "/assets/images/youtube-clone.png",
+            "featured": true,
+            "completionDate": "2024-06"
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+{
+  "categories": [
+    {
+      "name": "Programming Languages",
+      "skills": [
+        {
+          "name": "Java",
+          "level": 75,
+          "category": "Backend"
+        },
+        {
+          "name": "JavaScript",
+          "level": 60,
+          "category": "Frontend"
+        },
+        {
+          "name": "PHP",
+          "level": 70,
+          "category": "Backend"
+        },
+        {
+          "name": "Golang",
+          "level": 70,
+          "category": "Backend"
+        }
+      ]
+    },
+    {
+      "name": "Frontend Technologies",
+      "skills": [
+        {
+          "name": "CSS3",
+          "level": 50,
+          "category": "Styling"
+        },
+        {
+          "name": "Vue.js",
+          "level": 70,
+          "category": "Framework"
+        },
+        {
+          "name": "Next.js",
+          "level": 60,
+          "category": "Framework"
+        }
+      ]
+    },
+    {
+      "name": "Databases & Storage",
+      "skills": [
+        {
+          "name": "SQL",
+          "level": 75,
+          "category": "Query Language"
+        },
+        {
+          "name": "MongoDB",
+          "level": 70,
+          "category": "NoSQL"
+        }
+      ]
+    },
+    {
+      "name": "Tools & Monitoring",
+      "skills": [
+        {
+          "name": "Sentry",
+          "level": 50,
+          "category": "Error Tracking"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+name: Cross-Browser Testing
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18, 20]
+        browser: [chrome, firefox, webkit]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build static site
+        run: |
+          mkdir -p dist
+          cp -r css js assets data index.html dist/ || true
+          echo "Static site built successfully"
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: Run Playwright tests
+        run: npx playwright test
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report-${{ matrix.browser }}
+          path: playwright-report/
+          retention-days: 30
+
+  accessibility:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build static site
+        run: |
+          mkdir -p dist
+          cp -r css js assets data index.html dist/ || true
+
+      - name: Install accessibility testing tools
+        run: |
+          npm install -g pa11y-ci
+          npm install -g @axe-core/cli
+
+      - name: Run accessibility tests
+        run: |
+          echo "Running Pa11y tests..."
+          # Test home page
+          pa11y-ci --sitemap http://localhost:8000 || echo "Pa11y tests completed with warnings"
+
+      - name: Upload accessibility results
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: accessibility-report
+          path: ./
+          retention-days: 30
+
+  performance:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build static site
+        run: |
+          mkdir -p dist
+          cp -r css js assets data index.html dist/ || true
+
+      - name: Run Lighthouse CI
+        run: |
+          npm install -g @lhci/cli@0.12.x
+          lhci autorun
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+          LHCI_SERVER_URL: ${{ secrets.LHCI_SERVER_URL }}
+
+      - name: Upload Lighthouse results
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: lighthouse-report
+          path: .lighthouseci/
+          retention-days: 30

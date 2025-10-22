@@ -1,0 +1,26 @@
+{
+    "entries": [
+        {
+            "id": "binus-university",
+            "institution": "Universitas Bina Nusantara",
+            "degree": "Bachelor's Degree",
+            "location": "Jakarta, Indonesia",
+            "startDate": "2016-01",
+            "endDate": "2019-03",
+            "gpa": "3.2",
+            "achievements": [
+                "Graduated with 3.2 GPA",
+                "Completed degree in 3 years"
+            ]
+        },
+        {
+            "id": "sutono-school",
+            "institution": "Yayasan Perguruan Sutomo",
+            "degree": "High School Diploma",
+            "location": "Medan, Indonesia",
+            "startDate": "2004-01",
+            "endDate": "2015-12",
+            "achievements": []
+        }
+    ]
+}

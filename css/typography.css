@@ -1,0 +1,386 @@
+/* ==========================================================================
+   Typography and Terminal Modern Theme
+   ========================================================================== */
+
+/* JetBrains Mono Font Configuration */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Inter Font for UI elements */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Font Face Declarations */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+  src: local('JetBrains Mono'), local('JetBrainsMono-Regular');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: local('Inter'), local('Inter-Regular');
+}
+
+/* Terminal Modern Theme Variables */
+:root {
+  /* Core Terminal Colors */
+  --terminal-black: #000000;
+  --terminal-white: #ffffff;
+  --terminal-gray: #808080;
+  --terminal-light-gray: #d3d3d3;
+  --terminal-dark-gray: #4a4a4a;
+
+  /* Syntax Highlighting Colors */
+  --syntax-comment: #6e7681;
+  --syntax-keyword: #ff79c6;
+  --syntax-string: #50fa7b;
+  --syntax-number: #bd93f9;
+  --syntax-function: #8be9fd;
+  --syntax-variable: #f8f8f2;
+  --syntax-error: #ff5555;
+  --syntax-warning: #f1fa8c;
+
+  /* Background Colors */
+  --bg-terminal: #1e1e1e;
+  --bg-terminal-dark: #121212;
+  --bg-terminal-light: #282828;
+  --bg-selection: rgba(0, 174, 239, 0.3);
+
+  /* Text Colors */
+  --text-terminal: #e1e1e1;
+  --text-terminal-muted: #9ca3af;
+  --text-terminal-dim: #6b7280;
+
+  /* Accent Colors */
+  --terminal-cyan: #00ffff;
+  --terminal-green: #00ff00;
+  --terminal-yellow: #ffff00;
+  --terminal-magenta: #ff00ff;
+  --terminal-red: #ff0000;
+  --terminal-blue: #0000ff;
+
+  /* Custom Theme Colors */
+  --terminal-primary: #00AEEF; /* Electric Blue */
+  --terminal-secondary: #58a6ff; /* Light Blue */
+  --terminal-accent: #79c0ff; /* Hover Blue */
+  --terminal-success: #50fa7b; /* Green */
+  --terminal-warning: #f1fa8c; /* Yellow */
+  --terminal-error: #ff5555; /* Red */
+}
+
+/* Typography Scale */
+.text-xs { font-size: 0.75rem; }
+.text-sm { font-size: 0.875rem; }
+.text-base { font-size: 1rem; }
+.text-lg { font-size: 1.125rem; }
+.text-xl { font-size: 1.25rem; }
+.text-2xl { font-size: 1.5rem; }
+.text-3xl { font-size: 1.875rem; }
+.text-4xl { font-size: 2.25rem; }
+.text-5xl { font-size: 3rem; }
+.text-6xl { font-size: 3.75rem; }
+.text-7xl { font-size: 4.5rem; }
+
+/* Font Weights */
+.font-thin { font-weight: 100; }
+.font-extralight { font-weight: 200; }
+.font-light { font-weight: 300; }
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.font-extrabold { font-weight: 800; }
+
+/* Line Heights */
+.leading-none { line-height: 1; }
+.leading-tight { line-height: 1.25; }
+.leading-snug { line-height: 1.375; }
+.leading-normal { line-height: 1.5; }
+.leading-relaxed { line-height: 1.625; }
+.leading-loose { line-height: 2; }
+
+/* Text Alignment */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+/* Text Transform */
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+
+/* Terminal Font Classes */
+.font-mono {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+.font-sans {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Terminal Specific Styles */
+.terminal-text {
+  font-family: var(--font-mono);
+  color: var(--text-terminal);
+  background-color: var(--bg-terminal);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--bg-terminal-light);
+}
+
+.terminal-prompt {
+  color: var(--terminal-primary);
+  font-weight: 500;
+}
+
+.terminal-command {
+  color: var(--text-terminal);
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 0.5em;
+  height: 1.2em;
+  background-color: var(--terminal-primary);
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Syntax Highlighting Classes */
+.syntax-comment {
+  color: var(--syntax-comment);
+  font-style: italic;
+}
+
+.syntax-keyword {
+  color: var(--syntax-keyword);
+  font-weight: 500;
+}
+
+.syntax-string {
+  color: var(--syntax-string);
+}
+
+.syntax-number {
+  color: var(--syntax-number);
+}
+
+.syntax-function {
+  color: var(--syntax-function);
+}
+
+.syntax-variable {
+  color: var(--syntax-variable);
+}
+
+.syntax-error {
+  color: var(--syntax-error);
+  background-color: rgba(255, 85, 85, 0.1);
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+/* Typography Utilities */
+.heading {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+.caption {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--text-terminal-muted);
+}
+
+.code {
+  font-family: var(--font-mono);
+  background-color: var(--bg-tertiary);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  font-size: 0.875em;
+}
+
+.code-block {
+  font-family: var(--font-mono);
+  background-color: var(--bg-tertiary);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  line-height: 1.5;
+}
+
+.code-inline {
+  font-family: var(--font-mono);
+  background-color: var(--bg-tertiary);
+  padding: 0.125rem 0.25rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.875em;
+}
+
+/* Text Colors */
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-accent {
+  color: var(--accent-primary);
+}
+
+.text-success {
+  color: var(--terminal-success);
+}
+
+.text-warning {
+  color: var(--terminal-warning);
+}
+
+.text-error {
+  color: var(--terminal-error);
+}
+
+/* Background Colors */
+.bg-terminal {
+  background-color: var(--bg-terminal);
+}
+
+.bg-terminal-dark {
+  background-color: var(--bg-terminal-dark);
+}
+
+.bg-terminal-light {
+  background-color: var(--bg-terminal-light);
+}
+
+/* Selection Styling */
+::selection {
+  background-color: var(--bg-selection);
+  color: var(--text-primary);
+}
+
+::-moz-selection {
+  background-color: var(--bg-selection);
+  color: var(--text-primary);
+}
+
+/* Placeholder Text */
+::placeholder {
+  color: var(--text-terminal-muted);
+  opacity: 1;
+}
+
+/* Responsive Typography */
+@media (max-width: 640px) {
+  .text-6xl {
+    font-size: var(--text-4xl);
+  }
+  .text-5xl {
+    font-size: var(--text-3xl);
+  }
+  .text-4xl {
+    font-size: var(--text-2xl);
+  }
+  .text-3xl {
+    font-size: var(--text-xl);
+  }
+}
+
+@media (max-width: 480px) {
+  .text-4xl {
+    font-size: var(--text-xl);
+  }
+  .text-3xl {
+    font-size: var(--text-lg);
+  }
+  .text-2xl {
+    font-size: var(--text-base);
+  }
+}
+
+/* Print Typography */
+@media print {
+  body {
+    font-family: 'Inter', sans-serif;
+    color: black;
+    background: white;
+  }
+
+  .font-mono {
+    font-family: 'Courier New', monospace;
+  }
+
+  .text-primary,
+  .text-secondary,
+  .text-muted {
+    color: black;
+  }
+}
+
+/* Dark Mode Override */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: #0d1117;
+    --bg-secondary: #161b22;
+    --bg-tertiary: #21262d;
+    --text-primary: #c9d1d9;
+    --text-secondary: #8b949e;
+    --text-muted: #6e7681;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  :root {
+    --bg-primary: #000000;
+    --bg-secondary: #1a1a1a;
+    --bg-tertiary: #333333;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --text-muted: #999999;
+    --accent-primary: #00ffff;
+    --accent-secondary: #0099ff;
+  }
+
+  .btn {
+    border: 2px solid currentColor;
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .terminal-cursor {
+    animation: none;
+  }
+
+  .typewriter {
+    animation: none;
+    overflow: visible;
+    white-space: normal;
+  }
+}

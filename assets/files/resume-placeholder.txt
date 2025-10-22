@@ -1,0 +1,73 @@
+MIKAEL - JAVA BACKEND ENGINEER
+================================
+
+CONTACT INFORMATION
+-------------------
+Email: mikaelaja10003@gmail.com
+Phone: +628116077604
+Location: Jakarta, Indonesia
+LinkedIn: https://www.linkedin.com/in/mikael-kwan/
+GitHub: https://github.com/mikaelngb
+
+PROFESSIONAL SUMMARY
+--------------------
+Java Backend Engineer with 5+ years of experience in microservices architecture,
+backend optimization, and full-stack development. Proven track record of leading
+critical modules and implementing scalable solutions.
+
+WORK EXPERIENCE
+---------------
+
+PT. Kredit Pintar Indonesia - Jakarta, Indonesia
+Backend Engineer | September 2022 - September 2025
+- Improved and optimized backend microservices for business flow
+- Person in charge of Smart Engine Module (User Credit Score Services)
+- Implemented scalable backend solutions using Java, Spring, MongoDB, Postgres, RabbitMQ, Redis
+
+Ginee Indonesia - Jakarta, Indonesia
+Web Developer | April 2022 - August 2022
+- Improved the base website of Ginee, including WordPress articles
+- Became person in charge of Open API project
+- Acted as consultant for parties wanting to integrate with Ginee backend API
+
+Bookingtogo.com - Jakarta, Indonesia
+Web Developer | August 2019 - January 2022
+- Mainly developed the admin dashboard and website of bookingtogo.com
+- Part of booking point system development
+- Contributed to notification system and live chat system
+- Part of booking hotel system using Golang backend
+
+Nusanet - Medan, Indonesia
+Internship | February 2018 - February 2019
+- Learned all basics about coding a backend
+- Created a prototype backend quiz system for the company
+
+TECHNICAL SKILLS
+----------------
+Programming Languages: Java, JavaScript, PHP, Golang
+Backend Technologies: Spring, Laravel, Zend Framework
+Frontend Technologies: Vue.js, React, Next.js, HTML5, CSS3
+Databases: MongoDB, PostgreSQL, MySQL, Redis
+Tools & Technologies: RabbitMQ, Git, Docker, REST APIs
+
+EDUCATION
+---------
+[Bachelor's Degree in Computer Science or related field]
+[University Name] | [Graduation Year]
+
+LANGUAGES
+---------
+- English: Intermediate
+- Indonesian: Proficient
+- Mandarin: Basic
+
+PROJECTS
+--------
+YouTube Clone using Next.js
+- Built with Next.js, React, JavaScript, CSS
+- Live: https://ytv2-clone.netlify.app
+- GitHub: https://github.com/mikaelngb/youtube-clone
+
+---
+This is a placeholder resume file. Replace this with your actual resume.pdf
+optimized for web viewing and downloads.

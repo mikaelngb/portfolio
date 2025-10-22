@@ -1,0 +1,107 @@
+{
+  "entries": [
+    {
+      "id": "kredit-pintar",
+      "company": "PT. Kredit Pintar Indonesia",
+      "position": "Backend Engineer",
+      "location": "Jakarta, Indonesia",
+      "startDate": "2022-09",
+      "endDate": "2025-09",
+      "current": false,
+      "description": "Backend Engineer focusing on improving and optimizing backend microservices that support business flow. Led the Smart Engine Module for User Credit Score Services.",
+      "responsibilities": [
+        "Improved and optimized backend microservices for business flow",
+        "Person in charge of Smart Engine Module (User Credit Score Services)",
+        "Implemented scalable backend solutions"
+      ],
+      "achievements": [
+        "Successfully optimized microservices performance",
+        "Led critical user credit scoring system",
+        "Improved system reliability and scalability"
+      ],
+      "technologies": [
+        "Java",
+        "Spring",
+        "MongoDB",
+        "Postgres",
+        "RabbitMQ",
+        "Redis"
+      ]
+    },
+    {
+      "id": "ginee-indonesia",
+      "company": "Ginee Indonesia",
+      "position": "Web Developer",
+      "location": "Jakarta, Indonesia",
+      "startDate": "2022-04",
+      "endDate": "2022-08",
+      "current": false,
+      "description": "Web Developer improving the company's WordPress-based website and leading the Open API project for third-party integrations.",
+      "responsibilities": [
+        "Improved the base website of Ginee, including WordPress articles",
+        "Became person in charge of Open API project",
+        "Acted as consultant for parties wanting to integrate with Ginee backend API"
+      ],
+      "achievements": [
+        "Successfully launched Open API for third-party integrations",
+        "Improved website performance and user experience"
+      ],
+      "technologies": [
+        "Vue.js",
+        "WordPress",
+        "API Integration"
+      ]
+    },
+    {
+      "id": "bookingtogo",
+      "company": "Bookingtogo.com",
+      "position": "Web Developer",
+      "location": "Jakarta, Indonesia",
+      "startDate": "2019-08",
+      "endDate": "2022-01",
+      "current": false,
+      "description": "Web Developer responsible for admin dashboard and website development, implementing various systems including booking, notifications, and live chat.",
+      "responsibilities": [
+        "Mainly developed the admin dashboard and website of bookingtogo.com",
+        "Part of booking point system development",
+        "Contributed to notification system and live chat system",
+        "Part of booking hotel system using Golang backend"
+      ],
+      "achievements": [
+        "Developed comprehensive admin dashboard",
+        "Implemented real-time notification system",
+        "Built hotel booking system with Golang backend"
+      ],
+      "technologies": [
+        "PHP",
+        "Laravel",
+        "Vue.js",
+        "PostgreSQL",
+        "Golang"
+      ]
+    },
+    {
+      "id": "nusanet-internship",
+      "company": "Nusanet",
+      "position": "Internship",
+      "location": "Medan, Indonesia",
+      "startDate": "2018-02",
+      "endDate": "2019-02",
+      "current": false,
+      "description": "Internship focused on learning backend development fundamentals and creating a prototype quiz system for the company.",
+      "responsibilities": [
+        "Learned all basics about coding a backend",
+        "Created a prototype backend quiz system for the company"
+      ],
+      "achievements": [
+        "Successfully delivered functional quiz system prototype",
+        "Gained comprehensive backend development skills"
+      ],
+      "technologies": [
+        "Zend Framework",
+        "PHP",
+        "MySQL"
+      ]
+    }
+  ]
+}
