@@ -8,7 +8,7 @@
             "technologies": ["Next.js", "React", "JavaScript", "CSS"],
             "liveUrl": "https://ytv2-clone.netlify.app",
             "githubUrl": "https://github.com/mikaelngb/youtube-clone-v2",
-            "imageUrl": "/assets/images/youtube-clone.png",
+            "imageUrl": "assets/images/youtube-clone.png",
             "featured": true,
             "completionDate": "2024-06"
         }

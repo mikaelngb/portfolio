@@ -3,7 +3,7 @@
     "title": "Mikael - Java Backend Engineer",
     "description": "Java Backend Engineer with experience in microservices optimization and frontend development",
     "author": "Mikael",
-    "resumeUrl": "/assets/files/resume.pdf",
+    "resumeUrl": "assets/files/resume.pdf",
     "theme": {
       "primaryColor": "#00AEEF",
       "accentColor": "#58a6ff",
@@ -18,7 +18,7 @@
         "Vue.js",
         "Golang"
       ],
-      "ogImage": "/assets/images/og-image.png",
+      "ogImage": "assets/images/og-image.png",
       "twitterHandle": "mikaelngb"
     }
   },
