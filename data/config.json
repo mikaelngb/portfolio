@@ -1,79 +1,74 @@
 {
-  "site": {
-    "title": "Mikael - Java Backend Engineer",
-    "description": "Java Backend Engineer with experience in microservices optimization and frontend development",
-    "author": "Mikael",
-    "resumeUrl": "assets/files/resume.pdf",
-    "theme": {
-      "primaryColor": "#00AEEF",
-      "accentColor": "#58a6ff",
-      "backgroundColor": "#0d1117",
-      "textColor": "#c9d1d9"
+    "site": {
+        "title": "Mikael - Java Backend Engineer",
+        "description": "Java Backend Engineer with experience in microservices optimization and frontend development",
+        "author": "Mikael",
+        "resumeUrl": "assets/files/resume.pdf",
+        "theme": {
+            "primaryColor": "#00AEEF",
+            "accentColor": "#58a6ff",
+            "backgroundColor": "#0d1117",
+            "textColor": "#c9d1d9"
+        },
+        "seo": {
+            "keywords": [
+                "Java Backend Engineer",
+                "Microservices",
+                "Next.js",
+                "Vue.js",
+                "Golang"
+            ],
+            "ogImage": "assets/images/og-image.png",
+            "twitterHandle": "mikaelngb"
+        }
     },
-    "seo": {
-      "keywords": [
-        "Java Backend Engineer",
-        "Microservices",
-        "Next.js",
-        "Vue.js",
-        "Golang"
-      ],
-      "ogImage": "assets/images/og-image.png",
-      "twitterHandle": "mikaelngb"
+    "navigation": [
+        {
+            "name": "Home",
+            "href": "home",
+            "icon": "home"
+        },
+        {
+            "name": "About",
+            "href": "about",
+            "icon": "user"
+        },
+        {
+            "name": "Skills",
+            "href": "skills",
+            "icon": "code"
+        },
+        {
+            "name": "Experience",
+            "href": "experience",
+            "icon": "briefcase"
+        },
+        {
+            "name": "Projects",
+            "href": "projects",
+            "icon": "folder"
+        },
+        {
+            "name": "Contact",
+            "href": "contact",
+            "icon": "mail"
+        }
+    ],
+    "contact": {
+        "email": "mikaelaja10003@gmail.com",
+        "phone": "+628116077604",
+        "showPhone": true,
+        "socialLinks": [
+            {
+                "platform": "github",
+                "url": "https://github.com/mikaelngb",
+                "username": "mikaelngb"
+            },
+            {
+                "platform": "linkedin",
+                "url": "https://www.linkedin.com/in/mikael-kwan/",
+                "username": "mikael-kwan"
+            }
+        ]
     }
-  },
-  "navigation": [
-    {
-      "name": "Home",
-      "href": "home",
-      "icon": "home"
-    },
-    {
-      "name": "About",
-      "href": "about",
-      "icon": "user"
-    },
-    {
-      "name": "Skills",
-      "href": "skills",
-      "icon": "code"
-    },
-    {
-      "name": "Experience",
-      "href": "experience",
-      "icon": "briefcase"
-    },
-    {
-      "name": "Projects",
-      "href": "projects",
-      "icon": "folder"
-    },
-    {
-      "name": "Contact",
-      "href": "contact",
-      "icon": "mail"
-    }
-  ],
-  "contact": {
-    "email": "mikaelaja10003@gmail.com",
-    "phone": "+628116077604",
-    "showPhone": true,
-    "socialLinks": [
-      {
-        "platform": "github",
-        "url": "https://github.com/mikaelngb",
-        "username": "mikaelngb"
-      },
-      {
-        "platform": "linkedin",
-        "url": "https://www.linkedin.com/in/mikael-kwan/",
-        "username": "mikael-kwan"
-      },
-      {
-        "platform": "website",
-        "url": "https://mikaelngb.github.io",
-        "username": "portfolio"
-      }
-    ]
-  }
 }
